@@ -1,4 +1,4 @@
-import { ServiceItem, StepItem, WhyUsItem, FaqItem } from '../types';
+import { ServiceItem, StepItem, PortfolioItem, WhyUsItem, FaqItem } from '../types';
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -85,6 +85,72 @@ export const WORKFLOW_STEPS: StepItem[] = [
     title: 'Veröffentlichung',
     description: 'Nach deiner Freigabe geht die Website online.',
     details: 'Domain-Einbindung, SSL-Zertifikat und finaler Technik-Check – deine neue Website ist sofort einsatzbereit.'
+  }
+];
+
+export const PORTFOLIO_PROJECTS: PortfolioItem[] = [
+  {
+    id: 'restaurant',
+    title: 'Beispielprojekt – Restaurant',
+    category: 'Gastronomie & Hospitality',
+    subtitle: 'Speisekarte, Tischreservierung & Atmosphäre',
+    badge: 'Musterprojekt',
+    overview: 'Konzipiert für gehobene Gastronomie und lokale Lokale mit digitaler Speisekarte, stimmungsvoller Fotodarstellung und One-Click Tischreservierung.',
+    techHighlights: ['Interaktive Speisekarte', 'Reservierungs-Anbindung', 'Mobile-optimierte Anfahrt'],
+    mockup: {
+      heroTitle: 'Osteria Del Sole',
+      heroSubtitle: 'Frische mediterrane Küche mit Herz & Tradition.',
+      tagline: 'Gourmet • Trattoria • Vinothek',
+      navItems: ['Menü', 'Philosophie', 'Galerie', 'Reservieren'],
+      accentColor: '#e07a5f',
+      features: [
+        { title: 'Tageskarte digital', desc: 'Wöchentlich wechselnde Empfehlungen auf einen Blick.' },
+        { title: 'Tisch reservieren', desc: 'Bequeme Reservierung direkt vom Smartphone.' }
+      ],
+      stat: { value: '4.9 ★', label: '140+ Bewertungen' }
+    }
+  },
+  {
+    id: 'handwerk',
+    title: 'Beispielprojekt – Handwerksbetrieb',
+    category: 'Handwerk & Baugewerbe',
+    subtitle: 'Leistungsübersicht, Referenzen & Notdienst',
+    badge: 'Musterprojekt',
+    overview: 'Speziell auf regionale Handwerksbetriebe zugeschnitten: Vertrauensstiftende Darstellung der Meisterarbeit, transparente Leistungsbereiche und schneller Angebotskontakt.',
+    techHighlights: ['Projekt-Galerie vor/nachher', 'Sofort-Anruf-Button', 'Lokales SEO für die Region'],
+    mockup: {
+      heroTitle: 'Zimmerei & Holzbau Meister',
+      heroSubtitle: 'Traditionelles Handwerk trifft moderne Holzbauarchitektur.',
+      tagline: 'Meisterbetrieb seit 1998',
+      navItems: ['Leistungen', 'Holzbau', 'Referenzen', 'Angebot'],
+      accentColor: '#38bdf8',
+      features: [
+        { title: 'Dachstühle & Carports', desc: 'Individuelle Maßanfertigung aus heimischem Holz.' },
+        { title: 'Energetische Sanierung', desc: 'Zertifizierte Dämmung nach modernen Standards.' }
+      ],
+      stat: { value: '25+ Jahre', label: 'Meistererfahrung' }
+    }
+  },
+  {
+    id: 'selbstaendig',
+    title: 'Beispielprojekt – Selbstständig',
+    category: 'Beratung & Freiberufler',
+    subtitle: 'Expertise, Buchungskalender & Mandanten-Gewinnung',
+    badge: 'Musterprojekt',
+    overview: 'Maßgeschneidert für Berater, Coaches, Therapeuten und Freiberufler. Seriöser Premium-Look, der Vertrauen aufbaut und Besucher in Erstgespräche verwandelt.',
+    techHighlights: ['Terminbuchungs-Schnittstelle', 'Vertrauenssiegel & Testimonials', 'Klare Value Proposition'],
+    mockup: {
+      heroTitle: 'Kanzlei & Strategieberatung',
+      heroSubtitle: 'Klare Orientierung und pragmatische Lösungen für Gründer.',
+      tagline: 'Wirtschaftsprüfung • Steuer • Consulting',
+      navItems: ['Expertise', 'Über mich', 'Methodik', 'Erstgespräch'],
+      accentColor: '#10b981',
+      features: [
+        { title: 'Persönliche Betreuung', desc: 'Direkter Draht ohne anonyme Zwischeninstanzen.' },
+        { title: 'Erstgespräch buchen', desc: 'Unkomplizierte Terminwahl in wenigen Klicks.' }
+      ],
+      stat: { value: '100%', label: 'Individuelle Strategie' }
+    }
   }
 ];
 

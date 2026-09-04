@@ -47,7 +47,7 @@ export default function App() {
         <Services />
         <Pricing onContactClick={scrollToContact} />
         <Workflow />
-        <Portfolio />
+        <Portfolio onContactClick={scrollToContact} />
         <WhyUs />
         <Faq />
         <Contact onOpenPrivacy={() => setLegalModal('datenschutz')} />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface NavbarProps {
   onNavigateToContact: () => void;
@@ -48,15 +49,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigateToContact }) => {
         {/* Logo */}
         <a
           href="#hero"
-          className="flex items-center gap-2.5 text-white group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
+          className="group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
           id="brand-logo"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-bold text-sm tracking-tighter text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
-            SD
-          </div>
-          <span className="text-xl font-bold tracking-tight text-white font-display">
-            Schaller<span className="text-blue-400">Design</span>
-          </span>
+          <Logo />
         </a>
 
         {/* Desktop Navigation */}

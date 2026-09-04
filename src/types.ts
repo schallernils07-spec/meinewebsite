@@ -20,6 +20,25 @@ export interface StepItem {
   details: string;
 }
 
+export interface PortfolioItem {
+  id: string;
+  title: string;
+  category: string;
+  subtitle: string;
+  badge: string;
+  overview: string;
+  techHighlights: string[];
+  mockup: {
+    heroTitle: string;
+    heroSubtitle: string;
+    tagline: string;
+    navItems: string[];
+    accentColor: string;
+    features: { title: string; desc: string }[];
+    stat: { value: string; label: string };
+  };
+}
+
 export interface WhyUsItem {
   title: string;
   description: string;

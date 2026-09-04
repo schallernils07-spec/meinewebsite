@@ -59,6 +59,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal }) => {
               </li>
               <li>
                 <button
+                  onClick={() => scrollTo('#portfolio')}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Portfolio
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => scrollTo('#faq')}
                   className="hover:text-white transition-colors cursor-pointer"
                 >
