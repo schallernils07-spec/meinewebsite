@@ -1,0 +1,6 @@
+{
+  "name": "SchallerDesign",
+  "description": "Moderne, schnelle und professionelle Websites für kleine Unternehmen, Selbstständige und lokale Betriebe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

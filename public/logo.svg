@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Steel blue metallic gradient for D -->
+    <linearGradient id="sd-blue-gradient" x1="20%" y1="100%" x2="80%" y2="0%">
+      <stop offset="0%" stop-color="#2d4f75" />
+      <stop offset="45%" stop-color="#3c6794" />
+      <stop offset="100%" stop-color="#5584b4" />
+    </linearGradient>
+
+    <!-- Vibrant cyan/sky blue gradient for dark themes -->
+    <linearGradient id="sd-cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Subtle backdrop glow filter -->
+    <filter id="sd-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- SD Monogram Mark -->
+  <g transform="translate(60, 40)" filter="url(#sd-glow)">
+    <!-- S - Upper Hook and Loop -->
+    <!-- Top arm: starts with diagonal cut on right, goes left, curves 180 deg, goes right, curves down -->
+    <path
+      d="M 235 32 
+         L 130 32 
+         C 88 32, 54 64, 54 106 
+         C 54 148, 88 178, 130 178 
+         L 205 178 
+         C 236 178, 258 198, 258 226 
+         C 258 254, 236 272, 210 272 
+         L 190 272"
+      stroke="#ffffff"
+      stroke-width="34"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- S - Bottom Left Angled Bar -->
+    <path
+      d="M 68 280 L 38 316 L 152 316 L 168 280 Z"
+      fill="#ffffff"
+    />
+
+    <!-- Code bracket </> inside lower crook of S -->
+    <g stroke="#38bdf8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- < -->
+      <path d="M 98 234 L 84 245 L 98 256" />
+      <!-- / -->
+      <path d="M 116 230 L 106 260" />
+      <!-- > -->
+      <path d="M 124 234 L 138 245 L 124 256" />
+    </g>
+
+    <!-- D - Sweeping Outer Arc and Rising Diagonal Inner Stem -->
+    <!-- Top arm starts with diagonal cut (parallel to S), sweeps around and forms diagonal inner stem -->
+    <path
+      d="M 268 36 
+         L 295 36 
+         C 388 36, 448 96, 448 176 
+         C 448 256, 388 316, 295 316 
+         L 182 316 
+         L 236 218"
+      stroke="url(#sd-blue-gradient)"
+      stroke-width="34"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Typography: SCHALLERDESIGN -->
+  <g transform="translate(300, 435)" text-anchor="middle">
+    <text y="0" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="800" letter-spacing="10" fill="#ffffff">
+      SCHALLER<tspan fill="#38bdf8" font-weight="600">DESIGN</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle: WEBDESIGN. MODERN. INDIVIDUELL. with hairline side dividers -->
+  <g transform="translate(300, 485)" text-anchor="middle">
+    <!-- Left horizontal rule -->
+    <line x1="-240" y1="-5" x2="-155" y2="-5" stroke="#475569" stroke-width="1.2" opacity="0.8" />
+    
+    <!-- Tagline text -->
+    <text y="0" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" letter-spacing="5.5" fill="#94a3b8">
+      WEBDESIGN. MODERN. INDIVIDUELL.
+    </text>
+    
+    <!-- Right horizontal rule -->
+    <line x1="155" y1="-5" x2="240" y2="-5" stroke="#475569" stroke-width="1.2" opacity="0.8" />
+  </g>
+</svg>
